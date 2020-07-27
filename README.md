@@ -44,3 +44,9 @@ A ref is very similar to state, in that it persists in between the renders of yo
 *When do we use useCallback*
 - if you need to worry about **referential equality**
 - if for any reason, creating a function is really slow
+
+### useContext
+
+*Reminder*
+Context is for passing down props all the way down to children without having to manually pass them to every component.
+
