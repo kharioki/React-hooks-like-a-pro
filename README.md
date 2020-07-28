@@ -14,6 +14,7 @@
 - when the function you're calling in incredibly slow - making sure it doesnt recompute with every rerender
 - *referential equality* - when comparing values - in my case, I use it to only call rerender when themeStyles change
 
+
 ### useRef
 
 A ref is very similar to state, in that it persists in between the renders of your component.
@@ -28,6 +29,7 @@ A ref is very similar to state, in that it persists in between the renders of yo
 
 *Tip*
 - avoid using *useRef* where you can use *useState*. 
+
 
 ### useCallback
 
@@ -45,8 +47,19 @@ A ref is very similar to state, in that it persists in between the renders of yo
 - if you need to worry about **referential equality**
 - if for any reason, creating a function is really slow
 
+
 ### useContext
 
 *Reminder*
 Context is for passing down props all the way down to children without having to manually pass them to every component.
+
+
+### useReducer
+
+- like useState, it allows you to manage state and rerender a component when state changes.
+
+*Why use useReducer*
+**useReducer** provides us with a better way to handle complex state.
+
+- it has a similar pattern to redux
 
